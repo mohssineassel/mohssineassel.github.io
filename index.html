@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohssine Assel · AI Engineer</title>
+  <meta name="description" content="AI engineer specialising in Generative AI, RAG, LLM applications and MLOps. Experience at Crédit Agricole CIB, BNP Paribas (BMCI) and Toyota.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><i id="progress"></i></div>
+
+  <header class="masthead">
+    <div class="wrap mast-inner">
+      <span>Portfolio · Vol. 1 · Nov 2026</span>
+      <nav aria-label="Sections">
+        <a href="#s-intro">§1</a><a href="#s-exp">§2</a><a href="#s-results">§3</a><a href="#s-works">§4</a><a href="#s-methods">§5</a><a href="#refs">Refs</a>
+        <button id="theme-toggle" type="button" aria-label="Toggle dark mode">Ink</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="paper">
+
+      <!-- TITLE BLOCK -->
+      <header class="title-block">
+        <p class="kicker">Preprint · AI Engineering</p>
+        <h1>Mohssine Assel</h1>
+        <p class="subtitle">Grounded, measurable &amp; deployable AI: a portfolio in Generative&nbsp;AI, Machine&nbsp;Learning and&nbsp;NLP</p>
+        <p class="authors">
+          Mohssine Assel<sup>1,2</sup>
+          <span class="aff"><sup>1</sup>ISIMA, Clermont-Ferrand · <sup>2</sup>ENSAM Casablanca</span>
+        </p>
+        <p class="meta">
+          <a href="mailto:mohssineassel@gmail.com">mohssineassel@gmail.com</a> ·
+          <a href="https://www.linkedin.com/in/mohssine-assel" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://github.com/mohssineassel" target="_blank" rel="noopener">GitHub</a> ·
+          Bagneux, France
+        </p>
+        <p class="status"><span class="stamp">Available immediately</span></p>
+      </header>
+
+      <section class="abstract">
+        <span class="sn hand hand-abs" aria-hidden="true">R2: strong result,<br>well measured ✓</span>
+        <h2>Abstract</h2>
+        <p>
+          We present an AI engineer specialising in Generative AI, Machine Learning and NLP, with experience
+          designing solutions based on <b>LLMs, retrieval-augmented generation, AI agents</b> and classical ML models.
+          Across four industry roles in banking and manufacturing <a class="cite" href="#r1">1</a><a class="cite" href="#r2">2</a><a class="cite" href="#r4">4</a>,
+          the subject has covered the full development lifecycle, from data preparation to evaluation,
+          production and API integration. Our main result is a hybrid retrieval pipeline that raises
+          Hit@5 from <span class="circled"><b>0.88 to 1.00</b><svg class="ink-circle" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M18,34 C14,10 186,2 192,26 C198,50 40,60 12,42 C0,32 36,8 96,7"/></svg></span> on scientific question answering <a class="cite" href="#r5">5</a>.
+          We conclude that business problems can be turned into robust, operational AI systems that don't invent facts.
+        </p>
+        <p class="keywords"><b>Keywords:</b> RAG · LLMs · AI agents · NLP · embeddings · MLOps · evaluation</p>
+        <div class="actions">
+          <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Download full CV (PDF)</a>
+          <button class="btn ghost" id="cite-btn" type="button">Cite this portfolio</button>
+        </div>
+        <pre class="bibtex" id="bibtex" hidden><code>@misc{assel2026,
+  author = {Assel, Mohssine},
+  title  = {Grounded, Measurable and Deployable AI},
+  year   = {2026},
+  note   = {AI Engineer. Available immediately.},
+  email  = {mohssineassel@gmail.com},
+  url    = {https://mohssineassel.github.io}
+}</code></pre>
+      </section>
+
+      <!-- 1 INTRO -->
+      <section id="s-intro">
+        <h2><span class="num">1</span>Introduction</h2>
+        <p>
+          <span class="sn"><b>Thesis.</b> If a claim can't be traced back to a source, it shouldn't be generated.</span>
+          Language models are good at sounding right. The problem the subject works on is making them
+          <mark><em>be</em> right, and proving it</mark>. Every system described below has a measurable success criterion:
+          a retrieval metric, a validator, or a gate that a model must pass before it reaches production.
+        </p>
+        <p>
+          The contributions of this portfolio are threefold: (i) a citation-grounded RAG system for scientific
+          papers <a class="cite" href="#r5">5</a>; (ii) an incident-triage platform with automated retraining for a
+          banking group <a class="cite" href="#r2">2</a><a class="cite" href="#r6">6</a>; and (iii) evaluation tooling that
+          tells you whether a RAG configuration is actually better or just lucky <a class="cite" href="#r8">8</a><a class="cite" href="#r9">9</a>.
+        </p>
+      </section>
+
+      <!-- 2 EXPERIENCE -->
+      <section id="s-exp">
+        <h2><span class="num">2</span>Related work <small>(professional experience)</small></h2>
+
+        <h3><span class="num">2.1</span>Data Scientist, Crédit Agricole CIB <a class="cite" href="#r1">1</a></h3>
+        <p>
+          <span class="sn"><b>Apr – Oct 2026</b><br>Montrouge, France · IGE-MS<br><i>Python, Dataiku, scikit-learn, Sentence-Transformers, embeddings</i></span>
+          Designed an <b>NLP fuzzy-matching engine</b> combining lexical similarity, distance algorithms, text
+          normalisation and synonym handling to automate the detection of matches between texts. Developed,
+          trained and evaluated models for <b>text classification, topic modelling and sentiment analysis</b>
+          on business data, with preprocessing pipelines, evaluation metrics and <b>explainable AI (XAI)</b>
+          techniques to make the models reliable and easy to adopt.
+        </p>
+
+        <h3><span class="num">2.2</span>AI Engineer, BMCI · BNP Paribas Group <a class="cite" href="#r2">2</a></h3>
+        <p>
+          <span class="sn"><b>Feb – Aug 2025</b><br>Casablanca, Morocco<br><i>Airflow, MLflow, PostgreSQL, Sentence-Transformers, FastAPI, Docker</i></span>
+          Developed a <b>multilingual embedding-based system</b> that finds similar incidents, suggests resolutions
+          and predicts incident priority and category through a FastAPI service. Productionised the
+          <b>MLOps pipeline</b> with Airflow and MLflow: hourly data ingestion, data-quality checks, weekly
+          retraining and model evaluation before deployment. See also the open-source reimplementation <a class="cite" href="#r6">6</a>.
+        </p>
+
+        <h3><span class="num">2.3</span>AI Engineer, 3D Smart Factory <a class="cite" href="#r3">3</a></h3>
+        <p>
+          <span class="sn"><b>Feb – Jul 2024</b><br>Remote<br><i>Ollama, ChromaDB, PyMuPDF, Tesseract, FastAPI, Streamlit, Docker, Pydantic</i></span>
+          Built a <b>bilingual (FR/EN) RAG system</b> for questions about scientific papers, with precise citations
+          (paper, section and page) and OCR for scanned documents. Designed the hybrid retrieval pipeline
+          reported in §3.
+        </p>
+
+        <h3><span class="num">2.4</span>Python Developer, Toyota <a class="cite" href="#r4">4</a></h3>
+        <p>
+          <span class="sn"><b>Jul – Sep 2023</b><br>Casablanca, Morocco<br><i>Power BI, pandas</i></span>
+          Analysed and prepared production data, monitored industrial KPIs, and built an
+          <b>interactive Power BI dashboard</b> with automated data processing to improve production monitoring.
+        </p>
+      </section>
+
+      <!-- 3 RESULTS -->
+      <section id="s-results">
+        <h2><span class="num">3</span>Main result: SciRAG <a class="cite" href="#r5">5</a></h2>
+        <p>
+          SciRAG answers questions over uploaded PDFs, in French or English, and every claim in the answer cites
+          the exact <mark>paper, section and page</mark>. Scanned pages are OCR'd automatically, and follow-up questions
+          are rewritten into standalone queries before retrieval. It runs fully locally.
+          <span class="sn"><a href="https://github.com/mohssineassel/SciRAG" target="_blank" rel="noopener">Source code ↗</a><br><i>Python, FastAPI, ChromaDB, BM25, Sentence-Transformers, Ollama · Llama 3.1, Streamlit, Docker Compose, GitHub Actions</i></span>
+        </p>
+
+        <figure class="fig">
+          <div class="pipeline" role="img" aria-label="Pipeline: PDF and OCR, section-aware chunks, dense and BM25 retrieval, RRF fusion, cross-encoder rerank, LLM with citations">
+            <span>PDF<br>+ OCR</span><i></i>
+            <span>Section-aware<br>chunks</span><i></i>
+            <span class="split">Dense<br><em>∥</em><br>BM25</span><i></i>
+            <span>RRF<br>fusion</span><i></i>
+            <span>Cross-encoder<br>rerank</span><i></i>
+            <span class="out">LLM +<br>citations</span>
+          </div>
+          <figcaption><b>Figure 1.</b> The SciRAG pipeline. Dense (multilingual-e5) and lexical (BM25) retrievers run in parallel and are fused with reciprocal rank fusion before reranking.</figcaption>
+        </figure>
+
+        <!-- DEMO: put your recording at assets/scirag-demo.mp4 and uncomment this block
+        <figure class="fig">
+          <video class="demo" src="assets/scirag-demo.mp4" controls muted playsinline preload="metadata"></video>
+          <figcaption><b>Figure 2.</b> SciRAG answering a question with page-level citations.</figcaption>
+        </figure>
+        -->
+
+        <figure class="fig">
+          <span class="sn hand hand-tab" aria-hidden="true">perfect recall<br>at k=5 ↓</span>
+          <figcaption class="above"><b>Table 1.</b> Retrieval quality by mode. Best result in bold.</figcaption>
+          <table class="booktabs">
+            <thead><tr><th>Retrieval mode</th><th>Hit@5</th><th>MRR@5</th></tr></thead>
+            <tbody>
+              <tr><td>BM25</td><td><span class="cell" style="--v:.88">0.88</span></td><td><span class="cell" style="--v:.78">0.78</span></td></tr>
+              <tr><td>Dense (multilingual-e5)</td><td><span class="cell" style="--v:.94">0.94</span></td><td><span class="cell" style="--v:.76">0.76</span></td></tr>
+              <tr><td>Hybrid (RRF)</td><td><span class="cell" style="--v:.97">0.97</span></td><td><span class="cell" style="--v:.83">0.83</span></td></tr>
+              <tr class="best"><td>Hybrid + rerank</td><td><span class="cell circled" style="--v:1">1.00<svg class="ink-circle" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M18,34 C14,10 186,2 192,26 C198,50 40,60 12,42 C0,32 36,8 96,7"/></svg></span></td><td><span class="cell" style="--v:.94">0.94</span></td></tr>
+            </tbody>
+          </table>
+          <figcaption>Synthetic benchmark of 34 questions. Inline bars are scaled from 0 to 1. Answer faithfulness is scored with an LLM judge.</figcaption>
+        </figure>
+
+        <p>
+          Hybrid retrieval with reranking improves Hit@5 by <mark>+12 points</mark> over BM25 alone and MRR@5 from
+          0.78 to <b>0.94</b>, meaning the right passage is almost always ranked first.
+        </p>
+      </section>
+
+      <!-- 4 OTHER WORKS -->
+      <section id="s-works">
+        <h2><span class="num">4</span>Further experiments</h2>
+
+        <div class="work">
+          <h3><span class="num">4.1</span>JobFit AI <a class="cite" href="#r7">7</a></h3>
+          <p>
+            Tailors a LaTeX CV and cover letter to a job offer <mark>without inventing anything</mark>. A separate validator
+            checks every generated sentence against evidence in the master CV; requirements you don't meet are
+            reported as <em>missing</em>. The LaTeX layout is kept byte-for-byte.
+            <span class="sn"><i>FastAPI, OpenAI API, PostgreSQL, SQLAlchemy, MLflow, Streamlit</i></span>
+          </p>
+        </div>
+
+        <div class="work">
+          <h3><span class="num">4.2</span>Incident AI <a class="cite" href="#r6">6</a></h3>
+          <p>
+            Triage assistant for banking IT incidents: retrieves similar past incidents, suggests the fix that
+            worked, and predicts priority and team. Airflow ingests tickets hourly with data-quality checks and
+            retrains weekly behind a <b>champion/challenger gate</b> in the MLflow registry.
+            <span class="sn"><i>Airflow 3, MLflow, pgvector, multilingual-e5, scikit-learn, Docker</i></span>
+          </p>
+        </div>
+
+        <div class="work">
+          <h3><span class="num">4.3</span>RAG Evaluation Framework <a class="cite" href="#r9">9</a></h3>
+          <p>
+            A RAG agent plus an evaluation harness measuring answer quality, retrieval accuracy (Hit Rate, MRR) and
+            <b>hallucination rate</b>, used to compare LLM providers (OpenAI, Gemini, Groq) and embedding models.
+            <span class="sn"><i>Python, LangChain, Pydantic, DeepEval</i></span>
+          </p>
+        </div>
+
+        <div class="work">
+          <h3><span class="num">4.4</span>RAG Benchmarking Platform <a class="cite" href="#r8">8</a> <span class="tag">in progress</span></h3>
+          <p>
+            Compares RAG pipelines reproducibly: retrieval, answer and faithfulness metrics per question, with
+            <mark>bootstrap confidence intervals and significance tests</mark>, so a config is only called better when it is.
+            <span class="sn"><i>uv, FAISS, Ollama, SQLite, pytest, mypy</i></span>
+          </p>
+        </div>
+
+        <div class="work">
+          <h3><span class="num">4.5</span>Marathon Photo Retrieval <a class="cite" href="#r10">10</a></h3>
+          <p>
+            Automatic <b>bib-number recognition</b> for marathon photos, so runners can find every picture of
+            themselves by typing their number. YOLO detects bibs, OCR reads them, and photos are indexed by number.
+            <span class="sn"><i>Python, OpenCV, YOLO, OCR, PyTorch</i></span>
+          </p>
+        </div>
+      </section>
+
+      <!-- 5 METHODS -->
+      <section id="s-methods">
+        <h2><span class="num">5</span>Methods <small>(skills)</small></h2>
+        <figure class="fig">
+          <figcaption class="above"><b>Table 2.</b> Toolkit used across the work above.</figcaption>
+          <table class="booktabs methods">
+            <tbody>
+              <tr><th>Generative AI</th><td>LLMs, RAG, AI agents, prompt engineering, fine-tuning, embeddings, hybrid retrieval &amp; reranking, LLM-as-judge</td></tr>
+              <tr><th>AI &amp; ML</th><td>Python, PyTorch, Hugging Face Transformers, scikit-learn, deep learning, NLP, computer vision, XAI</td></tr>
+              <tr><th>Backend &amp; data</th><td>FastAPI, Pydantic, PostgreSQL / pgvector, MongoDB, ChromaDB, FAISS, data pipelines, SQL</td></tr>
+              <tr><th>MLOps &amp; cloud</th><td>Docker, Airflow, MLflow, GitHub Actions, model deployment, Azure, Dataiku</td></tr>
+              <tr><th>Tools</th><td>Git, Linux, LangChain, LlamaIndex, DeepEval, Ollama, OpenCV, Power BI</td></tr>
+            </tbody>
+          </table>
+        </figure>
+      </section>
+
+      <!-- 6 CONCLUSION -->
+      <section id="s-conclusion">
+        <div class="decision" aria-hidden="true"><small>Decision</small>Accepted</div>
+        <h2><span class="num">6</span>Conclusion</h2>
+        <p>
+          The subject is <b>available immediately</b> for AI / ML engineering roles in France or remote.
+          Correspondence should be addressed to
+          <a href="mailto:mohssineassel@gmail.com">mohssineassel@gmail.com</a>.
+        </p>
+        <div class="actions">
+          <a class="btn" href="mailto:mohssineassel@gmail.com">Write an email</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/mohssine-assel" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn ghost" href="https://github.com/mohssineassel" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </section>
+
+      <!-- APPENDIX -->
+      <section id="s-appendix" class="appendix">
+        <h2><span class="num">A</span>Appendix</h2>
+        <div class="appx-grid">
+          <div>
+            <h3>A.1 Education</h3>
+            <p><b>Master's, Information Systems &amp; Decision Support</b><br>ISIMA · Clermont-Ferrand · 2025–2026</p>
+            <p><b>Engineering Degree, AI &amp; Computer Engineering</b><br>ENSAM Casablanca · 2020–2025</p>
+          </div>
+          <div>
+            <h3>A.2 Certifications</h3>
+            <p><b>Machine Learning with Python</b><br>IBM</p>
+            <p><b>SQL (Advanced)</b><br>HackerRank</p>
+          </div>
+          <div>
+            <h3>A.3 Languages</h3>
+            <dl class="langs">
+              <dt>Arabic</dt><dd>Native</dd>
+              <dt>French</dt><dd>Fluent</dd>
+              <dt>English</dt><dd>Fluent</dd>
+              <dt>Spanish</dt><dd>Basic</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- REFERENCES -->
+      <section id="refs" class="refs">
+        <h2>References</h2>
+        <ol>
+          <li id="r1">Crédit Agricole CIB, IGE-MS. <i>Data Scientist.</i> Montrouge, France, Apr–Oct 2026.</li>
+          <li id="r2">BMCI · BNP Paribas Group. <i>AI Engineer.</i> Casablanca, Morocco, Feb–Aug 2025.</li>
+          <li id="r3">3D Smart Factory. <i>AI Engineer.</i> Remote, Feb–Jul 2024.</li>
+          <li id="r4">Toyota. <i>Python Developer.</i> Casablanca, Morocco, Jul–Sep 2023.</li>
+          <li id="r5">Assel, M. <i>SciRAG: citation-grounded QA over scientific papers.</i> <a href="https://github.com/mohssineassel/SciRAG" target="_blank" rel="noopener">github.com/mohssineassel/SciRAG</a></li>
+          <li id="r6">Assel, M. <i>Incident AI: triage for banking IT incidents.</i> <a href="https://github.com/mohssineassel/incident-intelligence" target="_blank" rel="noopener">github.com/mohssineassel/incident-intelligence</a></li>
+          <li id="r7">Assel, M. <i>JobFit AI: evidence-checked CV tailoring.</i> <a href="https://github.com/mohssineassel/cv_matcher" target="_blank" rel="noopener">github.com/mohssineassel/cv_matcher</a></li>
+          <li id="r8">Assel, M. <i>RAG Benchmarking Platform.</i> In progress. <a href="https://github.com/mohssineassel/RAG-benchmarking-Platform" target="_blank" rel="noopener">github.com/mohssineassel/RAG-benchmarking-Platform</a></li>
+          <li id="r9">Assel, M. <i>RAG Evaluation Framework: comparing LLM providers and embeddings.</i></li>
+          <li id="r10">Assel, M. <i>Marathon Photo Retrieval: bib-number recognition with YOLO and OCR.</i></li>
+        </ol>
+      </section>
+    </article>
+  </main>
+
+  <footer class="wrap colophon">
+    © 2026 Mohssine Assel · Set in Newsreader &amp; IBM Plex Mono · Received Nov 2026 · Accepted: hopefully by you
+  </footer>
+
+  <div class="pop" id="pop" role="tooltip" hidden></div>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+
+      /* theme: paper / ink */
+      var btn = document.getElementById('theme-toggle');
+      function isDark() {
+        return root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+      function label() { btn.textContent = isDark() ? 'Paper' : 'Ink'; }
+      try { var t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch (e) {}
+      label();
+      btn.addEventListener('click', function () {
+        root.dataset.theme = isDark() ? 'light' : 'dark';
+        try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+        label();
+      });
+
+      /* citation previews */
+      var pop = document.getElementById('pop');
+      function show(a) {
+        var ref = document.querySelector(a.getAttribute('href'));
+        if (!ref) return;
+        pop.innerHTML = '<b>[' + a.textContent + ']</b> ' + ref.innerHTML;
+        pop.hidden = false;
+        var r = a.getBoundingClientRect(), w = Math.min(320, innerWidth - 32);
+        pop.style.width = w + 'px';
+        pop.style.left = Math.max(16, Math.min(r.left + r.width / 2 - w / 2, innerWidth - w - 16)) + 'px';
+        var top = r.bottom + 8;
+        pop.style.top = top + 'px';
+        if (top + pop.offsetHeight > innerHeight - 8) pop.style.top = (r.top - pop.offsetHeight - 8) + 'px';
+      }
+      var hideTimer;
+      function hide() { hideTimer = setTimeout(function () { pop.hidden = true; }, 120); }
+      function isCite(n) { return n && n.nodeType === 1 && n.classList.contains('cite'); }
+      document.querySelectorAll('.cite').forEach(function (a) {
+        if (isCite(a.previousSibling)) a.classList.add('cont');
+        if (isCite(a.nextSibling)) a.classList.add('more');
+        a.setAttribute('aria-label', 'Reference ' + a.textContent);
+        a.addEventListener('mouseenter', function () { clearTimeout(hideTimer); show(a); });
+        a.addEventListener('focus', function () { show(a); });
+        a.addEventListener('mouseleave', hide);
+        a.addEventListener('blur', hide);
+        a.addEventListener('click', function () {
+          var ref = document.querySelector(a.getAttribute('href'));
+          ref.classList.remove('flash'); void ref.offsetWidth; ref.classList.add('flash');
+        });
+      });
+      pop.addEventListener('mouseenter', function () { clearTimeout(hideTimer); });
+      pop.addEventListener('mouseleave', hide);
+      addEventListener('scroll', function () { pop.hidden = true; }, { passive: true });
+
+      /* reading progress */
+      var bar = document.getElementById('progress');
+      function prog() {
+        var h = document.documentElement.scrollHeight - innerHeight;
+        bar.style.transform = 'scaleX(' + (h > 0 ? scrollY / h : 0) + ')';
+      }
+      addEventListener('scroll', prog, { passive: true }); prog();
+
+      /* cite this portfolio */
+      var cb = document.getElementById('cite-btn'), bib = document.getElementById('bibtex');
+      cb.addEventListener('click', function () {
+        bib.hidden = false;
+        var text = bib.textContent;
+        var done = function () { cb.textContent = 'BibTeX copied ✓'; setTimeout(function () { cb.textContent = 'Cite this portfolio'; }, 2000); };
+        if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, function () {});
+      });
+      /* ---------- life ---------- */
+      var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      root.classList.add('js');
+
+      /* name: letters set one by one */
+      var h1 = document.querySelector('h1'), name = h1.textContent;
+      h1.setAttribute('aria-label', name);
+      h1.innerHTML = name.split('').map(function (ch, i) {
+        return '<span class="ch" aria-hidden="true" style="--i:' + i + '">' + (ch === ' ' ? '&nbsp;' : ch) + '</span>';
+      }).join('');
+
+      /* pipeline step indices */
+      document.querySelectorAll('.pipeline > *').forEach(function (n, i) { n.style.setProperty('--i', i); });
+
+      /* count-up for table cells */
+      function countCells(scope) {
+        scope.querySelectorAll('.cell').forEach(function (c) {
+          var node = c.firstChild, target = parseFloat(node.nodeValue);
+          if (reduce || isNaN(target)) return;
+          var t0 = performance.now();
+          (function f(now) {
+            var p = Math.min((now - t0) / 1200, 1), e = 1 - Math.pow(1 - p, 3);
+            node.nodeValue = (target * e).toFixed(2);
+            if (p < 1) requestAnimationFrame(f);
+          })(t0);
+        });
+      }
+
+      /* scroll reveal */
+      var targets = document.querySelectorAll(
+        '.abstract, .paper > section > h2, .paper > section > h3, .paper > section > p, .paper > section > .fig, .work, .appx-grid > div, .refs li, .decision, .actions');
+      if ('IntersectionObserver' in window && !reduce) {
+        var io = new IntersectionObserver(function (es) {
+          es.forEach(function (e) {
+            if (!e.isIntersecting) return;
+            e.target.classList.add('in');
+            if (e.target.querySelector('.cell')) countCells(e.target);
+            io.unobserve(e.target);
+          });
+        }, { threshold: 0.2, rootMargin: '0px 0px -8% 0px' });
+        targets.forEach(function (t) { t.classList.add('rv'); io.observe(t); });
+      } else {
+        targets.forEach(function (t) { t.classList.add('in'); });
+      }
+
+      /* scroll-spy in masthead */
+      var links = {};
+      document.querySelectorAll('.masthead nav a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+      if ('IntersectionObserver' in window) {
+        var spy = new IntersectionObserver(function (es) {
+          es.forEach(function (e) {
+            if (!e.isIntersecting || !links[e.target.id]) return;
+            Object.keys(links).forEach(function (k) { links[k].classList.toggle('active', k === e.target.id); });
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        Object.keys(links).forEach(function (id) { var s = document.getElementById(id); if (s) spy.observe(s); });
+      }
+    })();
+  </script>
+</body>
+</html>
