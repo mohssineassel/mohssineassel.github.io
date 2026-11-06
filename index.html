@@ -15,7 +15,7 @@
 
   <header class="masthead">
     <div class="wrap mast-inner">
-      <span>Portfolio · Vol. 1 · Nov 2026</span>
+      <span>Portfolio </span>
       <nav aria-label="Sections">
         <a href="#s-intro">§1</a><a href="#s-exp">§2</a><a href="#s-results">§3</a><a href="#s-works">§4</a><a href="#s-methods">§5</a><a href="#refs">Refs</a>
         <button id="theme-toggle" type="button" aria-label="Toggle dark mode">Ink</button>
@@ -28,9 +28,9 @@
 
       <!-- TITLE BLOCK -->
       <header class="title-block">
-        <p class="kicker">Preprint · AI Engineering</p>
+        <p class="kicker"> AI Engineering</p>
         <h1>Mohssine Assel</h1>
-        <p class="subtitle">Grounded, measurable &amp; deployable AI: a portfolio in Generative&nbsp;AI, Machine&nbsp;Learning and&nbsp;NLP</p>
+        <p class="subtitle">Generative&nbsp;AI, Machine&nbsp;Learning and&nbsp;NLP</p>
         <p class="authors">
           Mohssine Assel<sup>1,2</sup>
           <span class="aff"><sup>1</sup>ISIMA, Clermont-Ferrand · <sup>2</sup>ENSAM Casablanca</span>
@@ -48,13 +48,12 @@
         <span class="sn hand hand-abs" aria-hidden="true">R2: strong result,<br>well measured ✓</span>
         <h2>Abstract</h2>
         <p>
-          We present an AI engineer specialising in Generative AI, Machine Learning and NLP, with experience
+          AI engineer specialising in Generative AI, Machine Learning and NLP, with experience
           designing solutions based on <b>LLMs, retrieval-augmented generation, AI agents</b> and classical ML models.
           Across four industry roles in banking and manufacturing <a class="cite" href="#r1">1</a><a class="cite" href="#r2">2</a><a class="cite" href="#r4">4</a>,
           the subject has covered the full development lifecycle, from data preparation to evaluation,
-          production and API integration. Our main result is a hybrid retrieval pipeline that raises
-          Hit@5 from <span class="circled"><b>0.88 to 1.00</b><svg class="ink-circle" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M18,34 C14,10 186,2 192,26 C198,50 40,60 12,42 C0,32 36,8 96,7"/></svg></span> on scientific question answering <a class="cite" href="#r5">5</a>.
-          We conclude that business problems can be turned into robust, operational AI systems that don't invent facts.
+          production and API integration. 
+          I conclude that business problems can be turned into robust, operational AI systems that don't invent facts.
         </p>
         <p class="keywords"><b>Keywords:</b> RAG · LLMs · AI agents · NLP · embeddings · MLOps · evaluation</p>
         <div class="actions">
@@ -63,7 +62,6 @@
         </div>
         <pre class="bibtex" id="bibtex" hidden><code>@misc{assel2026,
   author = {Assel, Mohssine},
-  title  = {Grounded, Measurable and Deployable AI},
   year   = {2026},
   note   = {AI Engineer. Available immediately.},
   email  = {mohssineassel@gmail.com},
@@ -171,28 +169,16 @@
           <figcaption>Synthetic benchmark of 34 questions. Inline bars are scaled from 0 to 1. Answer faithfulness is scored with an LLM judge.</figcaption>
         </figure>
 
-        <p>
-          Hybrid retrieval with reranking improves Hit@5 by <mark>+12 points</mark> over BM25 alone and MRR@5 from
-          0.78 to <b>0.94</b>, meaning the right passage is almost always ranked first.
-        </p>
       </section>
 
       <!-- 4 OTHER WORKS -->
       <section id="s-works">
         <h2><span class="num">4</span>Further experiments</h2>
 
-        <div class="work">
-          <h3><span class="num">4.1</span>JobFit AI <a class="cite" href="#r7">7</a></h3>
-          <p>
-            Tailors a LaTeX CV and cover letter to a job offer <mark>without inventing anything</mark>. A separate validator
-            checks every generated sentence against evidence in the master CV; requirements you don't meet are
-            reported as <em>missing</em>. The LaTeX layout is kept byte-for-byte.
-            <span class="sn"><i>FastAPI, OpenAI API, PostgreSQL, SQLAlchemy, MLflow, Streamlit</i></span>
-          </p>
-        </div>
+      
 
         <div class="work">
-          <h3><span class="num">4.2</span>Incident AI <a class="cite" href="#r6">6</a></h3>
+          <h3><span class="num">4.1</span>Incident AI <a class="cite" href="#r6">6</a></h3>
           <p>
             Triage assistant for banking IT incidents: retrieves similar past incidents, suggests the fix that
             worked, and predicts priority and team. Airflow ingests tickets hourly with data-quality checks and
@@ -202,7 +188,7 @@
         </div>
 
         <div class="work">
-          <h3><span class="num">4.3</span>RAG Evaluation Framework <a class="cite" href="#r9">9</a></h3>
+          <h3><span class="num">4.2</span>RAG Evaluation Framework <a class="cite" href="#r9">9</a></h3>
           <p>
             A RAG agent plus an evaluation harness measuring answer quality, retrieval accuracy (Hit Rate, MRR) and
             <b>hallucination rate</b>, used to compare LLM providers (OpenAI, Gemini, Groq) and embedding models.
@@ -211,16 +197,7 @@
         </div>
 
         <div class="work">
-          <h3><span class="num">4.4</span>RAG Benchmarking Platform <a class="cite" href="#r8">8</a> <span class="tag">in progress</span></h3>
-          <p>
-            Compares RAG pipelines reproducibly: retrieval, answer and faithfulness metrics per question, with
-            <mark>bootstrap confidence intervals and significance tests</mark>, so a config is only called better when it is.
-            <span class="sn"><i>uv, FAISS, Ollama, SQLite, pytest, mypy</i></span>
-          </p>
-        </div>
-
-        <div class="work">
-          <h3><span class="num">4.5</span>Marathon Photo Retrieval <a class="cite" href="#r10">10</a></h3>
+          <h3><span class="num">4.3</span>Marathon Photo Retrieval <a class="cite" href="#r10">10</a></h3>
           <p>
             Automatic <b>bib-number recognition</b> for marathon photos, so runners can find every picture of
             themselves by typing their number. YOLO detects bibs, OCR reads them, and photos are indexed by number.
@@ -297,10 +274,8 @@
           <li id="r3">3D Smart Factory. <i>AI Engineer.</i> Remote, Feb–Jul 2024.</li>
           <li id="r4">Toyota. <i>Python Developer.</i> Casablanca, Morocco, Jul–Sep 2023.</li>
           <li id="r5">Assel, M. <i>SciRAG: citation-grounded QA over scientific papers.</i> <a href="https://github.com/mohssineassel/SciRAG" target="_blank" rel="noopener">github.com/mohssineassel/SciRAG</a></li>
-          <li id="r6">Assel, M. <i>Incident AI: triage for banking IT incidents.</i> <a href="https://github.com/mohssineassel/incident-intelligence" target="_blank" rel="noopener">github.com/mohssineassel/incident-intelligence</a></li>
-          <li id="r7">Assel, M. <i>JobFit AI: evidence-checked CV tailoring.</i> <a href="https://github.com/mohssineassel/cv_matcher" target="_blank" rel="noopener">github.com/mohssineassel/cv_matcher</a></li>
-          <li id="r8">Assel, M. <i>RAG Benchmarking Platform.</i> In progress. <a href="https://github.com/mohssineassel/RAG-benchmarking-Platform" target="_blank" rel="noopener">github.com/mohssineassel/RAG-benchmarking-Platform</a></li>
-          <li id="r9">Assel, M. <i>RAG Evaluation Framework: comparing LLM providers and embeddings.</i></li>
+          <li id="r6">Assel, M. <i>Incident AI: triage for banking IT incidents.</i> 
+          <li id="r9">Assel, M. <i>RAG Evaluation Framework: comparing LLM providers and embeddings.</i></li><a href="https://github.com/mohssineassel/Rag_evaluation_framwork" target="_blank" rel="noopener">github.com/mohssineassel/Rag_evaluation_framwork</a></li>
           <li id="r10">Assel, M. <i>Marathon Photo Retrieval: bib-number recognition with YOLO and OCR.</i></li>
         </ol>
       </section>
@@ -308,7 +283,7 @@
   </main>
 
   <footer class="wrap colophon">
-    © 2026 Mohssine Assel · Set in Newsreader &amp; IBM Plex Mono · Received Nov 2026 · Accepted: hopefully by you
+    © 2026 Mohssine Assel 
   </footer>
 
   <div class="pop" id="pop" role="tooltip" hidden></div>
